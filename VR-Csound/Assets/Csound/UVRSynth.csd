@@ -106,7 +106,7 @@ aInSigL       zar       1    ; read first zak audio channel
 aInSigR       zar       2
 denorm(aInSigL)
 denorm(aInSigR)
-kFblvl       init      0.77 ; feedback level - i.e. reverb time
+kFblvl       init      0.88 ; feedback level - i.e. reverb time
 kFco         init      8000 ; cutoff freq. of a filter within the reverb
 ; create reverberated version of input signal (note stereo input and output)
 aRvbL,aRvbR  reverbsc  aInSigL, aInSigR, kFblvl, kFco

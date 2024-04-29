@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
+using TMPro;
 
 public class BeamManager : MonoBehaviour
 {
@@ -18,16 +19,19 @@ public class BeamManager : MonoBehaviour
 
     // Options
     [SerializeField] float maxPitchDistance = 4.0f;
-    [SerializeField] float maxModDistance = 1.8f;
+    [SerializeField] float maxModDistance = 2f;
+
+    // Midi Note Display
+    [SerializeField] TextMeshProUGUI text;
 
     // Debug
     [SerializeField] int midiNote;
     [SerializeField] float freq;
 
     // Beam Color
-    public LineRenderer lineRenderer;
+    /*public LineRenderer lineRenderer;
     private Color initialColor;
-    private Color stretchedColor = Color.white;
+    private Color stretchedColor = Color.white;*/
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +44,7 @@ public class BeamManager : MonoBehaviour
 
         // Beam Color Init
         // Get the initial color of the material
-        initialColor = lineRenderer.material.color;
+        //initialColor = lineRenderer.material.color;
     }
 
     private void OnEnable()
@@ -79,6 +83,8 @@ public class BeamManager : MonoBehaviour
         float distance2 = Vector3.Distance(obj1.transform.position, crystal.transform.position);
         // convert distance into midi note (4 octaves)
         midiNote = (int)(48 * ConvertRange(0f, maxPitchDistance, 0f, 1f, distance2)) + 36;
+        text.text = MidiToNoteString(midiNote);
+
         // convert midi note to frequency and send to csound
         freq = MidiToFrequency(midiNote);
         csound.SetChannel("freq", freq);
@@ -86,10 +92,22 @@ public class BeamManager : MonoBehaviour
 
         // Beam Color
         // Interpolate between the initial color and white based on the input float
-        Color targetColor = Color.Lerp(initialColor, stretchedColor, convertedDistance);
+        //Color targetColor = Color.Lerp(initialColor, stretchedColor, convertedDistance);
 
         // Apply the new color to the material
-        lineRenderer.material.color = Color.white;
+        //lineRenderer.material.color = Color.white;
+    }
+
+    // Method to convert MIDI number to note string
+    public string MidiToNoteString(int midiNumber)
+    {
+        string[] noteNames = { "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" };
+
+        int noteIndex = midiNumber % 12;
+        int octave = midiNumber / 12 - 1;
+
+        string noteName = noteNames[noteIndex];
+        return noteName + octave.ToString();
     }
 
     float ConvertRange(

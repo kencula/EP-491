@@ -7,40 +7,24 @@
       "RelativeMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\beammanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\assets\\scripts\\beammanagerl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\beammanagerl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\ken kobayashi\\desktop\\ep-491\\vr-csound\\assets\\lighteffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\lighteffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\assets\\scripts\\linerender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\linerender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\assets\\scripts\\csoundcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\csoundcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\assets\\autohand\\scripts\\grabbable\\grablock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|solutionrelative:assets\\autohand\\scripts\\grabbable\\grablock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\assets\\scripts\\beammanagerl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\beammanagerl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\assets\\scripts\\cubetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cubetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\assets\\autohand\\scripts\\grabbable\\grabbable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|solutionrelative:assets\\autohand\\scripts\\grabbable\\grabbable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\assets\\scripts\\csoundcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\csoundcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\assets\\autohand\\examples\\scenes\\xr\\scripts\\xrhandcontrollerlink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|solutionrelative:assets\\autohand\\examples\\scenes\\xr\\scripts\\xrhandcontrollerlink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\assets\\autohand\\scripts\\grabbable\\grabbablethrowevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F3FCF0-7A23-41DC-FF69-B37CD446CBB0}|Assembly-CSharp.csproj|solutionrelative:assets\\autohand\\scripts\\grabbable\\grabbablethrowevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\ken kobayashi\\desktop\\ep-491\\vr-csound\\assets\\lighteffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\lighteffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,11 +34,64 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BeamManager.cs",
+              "DocumentMoniker": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\Scripts\\BeamManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BeamManager.cs",
+              "ToolTip": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\Scripts\\BeamManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BeamManager.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAgwDsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T00:42:42.665Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "BeamManagerL.cs",
+              "DocumentMoniker": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\Scripts\\BeamManagerL.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BeamManagerL.cs",
+              "ToolTip": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\Scripts\\BeamManagerL.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BeamManagerL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T08:03:30.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CubeTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\Scripts\\CubeTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CubeTrigger.cs",
+              "ToolTip": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\Scripts\\CubeTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CubeTrigger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T07:48:20.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LineRender.cs",
+              "DocumentMoniker": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\Scripts\\LineRender.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LineRender.cs",
+              "ToolTip": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\Scripts\\LineRender.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LineRender.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAowHIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T00:05:52.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "LightEffect.cs",
               "DocumentMoniker": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\LightEffect.cs",
               "RelativeDocumentMoniker": "Assets\\LightEffect.cs",
@@ -66,103 +103,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BeamManagerL.cs",
-              "DocumentMoniker": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\Scripts\\BeamManagerL.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\BeamManagerL.cs",
-              "ToolTip": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\Scripts\\BeamManagerL.cs",
-              "RelativeToolTip": "Assets\\Scripts\\BeamManagerL.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAowEkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T08:03:30.649Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BeamManager.cs",
-              "DocumentMoniker": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\Scripts\\BeamManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\BeamManager.cs",
-              "ToolTip": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\Scripts\\BeamManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\BeamManager.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAgwFsAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T00:42:42.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CubeTrigger.cs",
-              "DocumentMoniker": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\Scripts\\CubeTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CubeTrigger.cs",
-              "ToolTip": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\Scripts\\CubeTrigger.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CubeTrigger.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T07:48:20.871Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GrabbableThrowEvent.cs",
-              "DocumentMoniker": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\AutoHand\\Scripts\\Grabbable\\GrabbableThrowEvent.cs",
-              "RelativeDocumentMoniker": "Assets\\AutoHand\\Scripts\\Grabbable\\GrabbableThrowEvent.cs",
-              "ToolTip": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\AutoHand\\Scripts\\Grabbable\\GrabbableThrowEvent.cs",
-              "RelativeToolTip": "Assets\\AutoHand\\Scripts\\Grabbable\\GrabbableThrowEvent.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T05:46:04.483Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Grabbable.cs",
-              "DocumentMoniker": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\AutoHand\\Scripts\\Grabbable\\Grabbable.cs",
-              "RelativeDocumentMoniker": "Assets\\AutoHand\\Scripts\\Grabbable\\Grabbable.cs",
-              "ToolTip": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\AutoHand\\Scripts\\Grabbable\\Grabbable.cs",
-              "RelativeToolTip": "Assets\\AutoHand\\Scripts\\Grabbable\\Grabbable.cs",
-              "ViewState": "AQIAADsCAAAAAAAAAAApwFYCAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T04:55:39.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "XRHandControllerLink.cs",
-              "DocumentMoniker": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\AutoHand\\Examples\\Scenes\\XR\\Scripts\\XRHandControllerLink.cs",
-              "RelativeDocumentMoniker": "Assets\\AutoHand\\Examples\\Scenes\\XR\\Scripts\\XRHandControllerLink.cs",
-              "ToolTip": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\AutoHand\\Examples\\Scenes\\XR\\Scripts\\XRHandControllerLink.cs",
-              "RelativeToolTip": "Assets\\AutoHand\\Examples\\Scenes\\XR\\Scripts\\XRHandControllerLink.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAawKoAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T04:47:52.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GrabLock.cs",
-              "DocumentMoniker": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\AutoHand\\Scripts\\Grabbable\\GrabLock.cs",
-              "RelativeDocumentMoniker": "Assets\\AutoHand\\Scripts\\Grabbable\\GrabLock.cs",
-              "ToolTip": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\AutoHand\\Scripts\\Grabbable\\GrabLock.cs",
-              "RelativeToolTip": "Assets\\AutoHand\\Scripts\\Grabbable\\GrabLock.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T04:33:56.959Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LineRender.cs",
-              "DocumentMoniker": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\Scripts\\LineRender.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\LineRender.cs",
-              "ToolTip": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\Scripts\\LineRender.cs",
-              "RelativeToolTip": "Assets\\Scripts\\LineRender.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T00:05:52.614Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "CsoundControl.cs",
               "DocumentMoniker": "C:\\Users\\Ken Kobayashi\\Desktop\\EP-491\\VR-Csound\\Assets\\Scripts\\CsoundControl.cs",
@@ -171,7 +111,8 @@
               "RelativeToolTip": "Assets\\Scripts\\CsoundControl.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T11:30:01.298Z"
+              "WhenOpened": "2024-02-27T11:30:01.298Z",
+              "EditorCaption": ""
             }
           ]
         }
