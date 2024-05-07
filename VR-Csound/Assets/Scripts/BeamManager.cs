@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 using TMPro;
+using UnityEngine.UI;
+using Unity.VisualScripting;
+using System.Linq;
 
 public class BeamManager : MonoBehaviour
 {
@@ -13,8 +16,8 @@ public class BeamManager : MonoBehaviour
     bool noteOn = false;
 
     // Reference to flashlights
-    [SerializeField] GameObject obj1;
-    [SerializeField] GameObject obj2;
+    [SerializeField] GameObject objR;
+    [SerializeField] GameObject objL;
     [SerializeField] GameObject crystal;
 
     // Options
@@ -24,14 +27,37 @@ public class BeamManager : MonoBehaviour
     // Midi Note Display
     [SerializeField] TextMeshProUGUI text;
 
-    // Debug
+    // Tuner
     [SerializeField] int midiNote;
+    [SerializeField] RectTransform tuner;
+    [SerializeField] Image tunerImage;
     [SerializeField] float freq;
 
-    // Beam Color
-    /*public LineRenderer lineRenderer;
-    private Color initialColor;
-    private Color stretchedColor = Color.white;*/
+    // Mod Wheel
+    [SerializeField] RectTransform modWheel;
+    [SerializeField] Image modWheelImage;
+
+    // Rotational Mod wheel
+    [SerializeField] RectTransform dot;
+
+    // Csound Channel Manager
+    readonly List<string> csoundChannels = new()
+    {
+        "vibrato",
+        "pbUp",
+        "pbDown",
+        "filter",
+        "rvbAmt",
+        "delAmt",
+        "delTime",
+        "delFeedback",
+        "distortion",
+        "portTime"
+    };
+
+    public int[] channelIndexes = new int[5];
+
+    [SerializeField] TMP_Text tensionLabel;
 
     // Start is called before the first frame update
     void Start()
@@ -42,9 +68,8 @@ public class BeamManager : MonoBehaviour
         GameObject[] hands = GameObject.FindGameObjectsWithTag("Right Hand");
         hand = hands[0].GetComponent<Autohand.Hand>();
 
-        // Beam Color Init
-        // Get the initial color of the material
-        //initialColor = lineRenderer.material.color;
+        // Disable cursor for showcase reasons
+        Cursor.visible = false;
     }
 
     private void OnEnable()
@@ -74,28 +99,87 @@ public class BeamManager : MonoBehaviour
     {
         if (!csound.IsInitialized) return;
 
-        //Get distance between the flashlights
-        float distance = Vector3.Distance(obj1.transform.position, obj2.transform.position);
+        //Get distance between orbs
+        float distance = Vector3.Distance(objR.transform.position, objL.transform.position);
         float convertedDistance = ConvertRange(0f, maxModDistance, 0f, 1f, distance);
-        csound.SetChannel("distance", convertedDistance);
+        if (!channelIndexes.Contains(3))
+        {
+            csound.SetChannel("filter", convertedDistance);
+            tensionLabel.text = "Filter Cutoff";
+        }
+        else
+        {
+            tensionLabel.text = "Disabled! XY pad is controlling filter cutoff";
+        }
 
-        // get distance between right flashlight and crystal
-        float distance2 = Vector3.Distance(obj1.transform.position, crystal.transform.position);
+        // get distance between right orb and crystal
+        float distance2 = Vector3.Distance(objR.transform.position, crystal.transform.position);
+
+        // Set modWheel Visual
+        modWheel.anchoredPosition = new Vector2(modWheel.anchoredPosition.x, ConvertRange(0f, 1f, -100f, 0, convertedDistance));
+        modWheel.sizeDelta = new Vector2(modWheel.sizeDelta.x, convertedDistance * 200);
+        modWheelImage.color = Color.Lerp(Color.green, Color.red, convertedDistance);
+
         // convert distance into midi note (4 octaves)
-        midiNote = (int)(48 * ConvertRange(0f, maxPitchDistance, 0f, 1f, distance2)) + 36;
+        float midiNoteF = (48 * ConvertRange(0f, maxPitchDistance, 0f, 1f, distance2)) + 36;
+        midiNote = Mathf.RoundToInt(midiNoteF);
+        float offTuneAmt = midiNoteF - midiNote;
         text.text = MidiToNoteString(midiNote);
 
+        // setting visual tuner
+        float yPos = ConvertRange(-0.5f, 0.5f, -50f, 0f, offTuneAmt);
+        tuner.anchoredPosition = new Vector2(tuner.anchoredPosition.x, yPos);
+        tuner.sizeDelta = new Vector2(tuner.sizeDelta.x, (offTuneAmt + 0.5f) * 100);
+
+        // Tuner Color
+        tunerImage.color = Mathf.Abs(offTuneAmt) < 0.2 ? Color.green : Color.red;
+
         // convert midi note to frequency and send to csound
-        freq = MidiToFrequency(midiNote);
-        csound.SetChannel("freq", freq);
+        if (noteOn)
+        {
+            freq = MidiToFrequency(midiNote);
+            csound.SetChannel("freq", freq);
+        }
 
+        // Rotation based CC
+        // Atan2 taken from: https://starmanta.gitbooks.io/unitytipsredux/content/second-question.html
+        Vector3 forward = objL.transform.forward;
+        Vector3 right = objL.transform.right;
+        float pitchAngle = Mathf.Clamp(Mathf.Atan2(forward.y, forward.z) * Mathf.Rad2Deg, -90, 90);
+        float rollAngle = Mathf.Atan2(right.x, right.y) * Mathf.Rad2Deg;
+        if (!(rollAngle >= 0 && rollAngle < 180))
+        {
+            rollAngle = (rollAngle < -90) ? 180 : 0;
+        }
 
-        // Beam Color
-        // Interpolate between the initial color and white based on the input float
-        //Color targetColor = Color.Lerp(initialColor, stretchedColor, convertedDistance);
+        // Convert range to -1 - 1
+        pitchAngle = ConvertRange(-90, 90, -1, 1, pitchAngle);
+        rollAngle = ConvertRange(0, 180, -1, 1, rollAngle);
 
-        // Apply the new color to the material
-        //lineRenderer.material.color = Color.white;
+        // Set visual xy pad
+        dot.anchoredPosition = new Vector2(dot.anchoredPosition.x, pitchAngle * 150);
+        dot.anchoredPosition = new Vector2(rollAngle * 150, dot.anchoredPosition.y);
+
+        // local var to send to csound
+        //float positiveX, negativeX, positiveY, negativeY;
+
+        if (pitchAngle >= 0)
+        {
+            csound.SetChannel(csoundChannels[channelIndexes[2]], pitchAngle);
+        }
+        else
+        {
+            csound.SetChannel(csoundChannels[channelIndexes[3]], Mathf.Abs(pitchAngle));
+        }
+
+        if (rollAngle >= 0)
+        {
+            csound.SetChannel(csoundChannels[channelIndexes[0]], rollAngle);
+        }
+        else
+        {
+            csound.SetChannel(csoundChannels[channelIndexes[1]], Mathf.Abs(rollAngle));
+        } 
     }
 
     // Method to convert MIDI number to note string
@@ -119,7 +203,7 @@ public class BeamManager : MonoBehaviour
         return (float)(newStart + ((value - originalStart) * scale));
     }
 
-        float MidiToFrequency(int midiNote)
+    float MidiToFrequency(int midiNote)
     {
         return Mathf.Pow(2f, (midiNote - 69) / 12f) * 440f;
     }
@@ -128,18 +212,17 @@ public class BeamManager : MonoBehaviour
     public void OnTriggerGrab(Autohand.Hand hand, Grabbable grab)
     {
         //hand.Release();
-        Debug.Log("Trigger");
+        //Debug.Log("Trigger");
     }
     public void OnTriggerRelease(Autohand.Hand hand, Grabbable grab)
     {
-        
+
     }
     void OnSqueezed(Autohand.Hand hand, Grabbable grab)
     {
         //Called when the "Squeeze" event is called, this event is tied to a secondary controller input through the HandControllerLink component on the hand
         csound.SetChannel("noteon", 1);
         noteOn = true;
-        Debug.Log("Squeeze");
     }
     void OnUnsqueezed(Autohand.Hand hand, Grabbable grab)
     {

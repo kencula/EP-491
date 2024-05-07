@@ -87,6 +87,8 @@ e
 
 
 
+
+
 <bsbPanel>
  <label>Widgets</label>
  <objectName/>

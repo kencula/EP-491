@@ -8,6 +8,12 @@ TagManager:
   - Flashlight
   - Right Hand
   - Left Hand
+  - posX
+  - negX
+  - posY
+  - negY
+  - tension
+  - Csound
   layers:
   - Default
   - TransparentFX
